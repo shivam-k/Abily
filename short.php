@@ -1,5 +1,5 @@
 <?php
-//**********Make Connection
+//**************** Make Connection
 $servername = "localhost";
 $username = "root";
 $password = "root";
@@ -33,6 +33,15 @@ if($result->num_rows > 0){
 }
 else{
     echo "0 results";
+}
+
+//*************** Insert into database
+$sql = "INSERT INTO `pinfo` (fname, lname, mnumber) VALUES ('$fname', '$lname', '$mnumber')";
+if($conn->query($sql) === TRUE){
+    echo "New records created successfully";
+}
+else{
+    echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
 ?>
