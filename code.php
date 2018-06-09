@@ -1,21 +1,4 @@
 <?php
-
-// $sql = "SELECT * from `pinfo`";
-// $result = $conn->query($sql);
-// if($result->num_rows > 0){
-//     while($row = $result->fetch_assoc()){
-//         $id = $row['id'];
-//         $fname = $row['fname'];
-//         $lname = $row['lname'];
-//
-//         // echo "\n" . $id . " " . $fname . " " . $lname;
-//     }
-// }
-// else{
-//     echo "0 results";
-// }
-
-
 $check = 1;
 $pass = 1;
 $aadharErr = $fileoneErr = "";
