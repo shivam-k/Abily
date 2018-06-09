@@ -1,6 +1,4 @@
 <?php
-
-
 //**********Make Connection
 $servername = "localhost";
 $username = "root";
