@@ -44,4 +44,37 @@ else{
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
+//*************** Email Validation
+if (!filter_var($emailid, FILTER_VALIDATE_EMAIL)){
+    $emailidErr = "Invalid email format"; 
+}
+
+// ************* Function for Slashing redundant
+function test_input($data){
+	$data = trim($data);
+	$data = stripcslashes($data);
+	$data = htmlspecialchars($data);
+	return $data;
+}
+
+// ********* Regex 
+function letters_spaces($data){
+	if(!preg_match("/^[a-zA-Z ]+$/", $data)){
+		return "Only Letters and Spaces are allowed.";
+	}
+	return "";
+}
+function numbers_decimal($data){
+	if(!preg_match("/^[0-9]*\.?[0-9]*$/", $data)){
+		return "Only Numbers and a decimal are allowed.";
+	}
+	return "";
+}
+if(isset($_POST["submit"])){}
+//
+
 ?>
+
+
+
+
