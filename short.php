@@ -71,6 +71,7 @@ function numbers_decimal($data){
 	return "";
 }
 if(isset($_POST["submit"])){}
+if(strlen($aadhar) < 12){}
 //
 
 ?>
