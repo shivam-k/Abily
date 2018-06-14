@@ -73,6 +73,7 @@ function numbers_decimal($data){
 if(isset($_POST["submit"])){}
 if(strlen($aadhar) < 12){}
 
+$foneName = $_FILES['fone']['name'];
 $imageFileType = strtolower(pathinfo($location.$name, PATHINFO_EXTENSION));
 
 if(move_uploaded_file($tmp_name, $location.$name)){}
