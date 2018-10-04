@@ -140,16 +140,6 @@ if(move_uploaded_file($tmp_name, $location.$name)){}
       <td>@mdo</td>
     </tr>
     <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
   </tbody>
 </table>
 
@@ -159,3 +149,15 @@ if(move_uploaded_file($tmp_name, $location.$name)){}
 
 <!-- Shadow -->
 <div class="shadow-sm p-3 mb-5 bg-white rounded">Small shadow</div>
+
+<!-- JQery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#fname").change(function(){
+      var fname = $('#fname').val();
+        $('#lname').val(fname);
+        // alert(name);
+    });
+});
+</script>
